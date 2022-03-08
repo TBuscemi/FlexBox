@@ -21,7 +21,7 @@
 // 1fr is for 1 part of the available space
 // now if we add more repeats() you can make a pattern where the divs are taking up different amount of space as showing below but it is 
 // commented out.
-@media( min-width: 65rem){
+@media( min-width: 80rem){
     .grid-wrapper{
         grid-template-columns:repeat(3, 1fr);
         // grid-template-columns:repeat(1, 1fr) repeat(1, 2fr) repeat(1, 1fr);

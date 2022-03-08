@@ -8,7 +8,7 @@
   background-color: black;
 }
 
-@media (min-width: 65rem) {
+@media (min-width: 80rem) {
   .grid-wrapper {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
