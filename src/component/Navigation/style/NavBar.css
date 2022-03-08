@@ -18,14 +18,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  gap: 2rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: antiquewhite;
 }
 
 .text-links {
-  width: 100%;
+  margin-right: 1rem;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #cacaca;
 }
 /*# sourceMappingURL=NavBar.css.map */

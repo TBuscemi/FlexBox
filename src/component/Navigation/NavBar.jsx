@@ -8,6 +8,7 @@ export default function NavBar() {
     <div className='nav-wrapper'>
       <div className='nav-cont'>
           <NavLink className='text-links' to="/">Home</NavLink>
+          <NavLink className='text-links' to="/simpleflex">Simple Flex</NavLink>
       </div>
     </div>
   )

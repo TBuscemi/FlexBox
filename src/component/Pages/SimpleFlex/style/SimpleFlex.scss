@@ -1,0 +1,73 @@
+ //width at 100% will help you center the content in this example
+ //height at 100% will make it so the content can grow when things wrap
+ //display flex is saying we are gonna use flex
+ //flex direction this is saying all the divs will be in in a descending order or vertical  
+ //align-items is how  the content will be centered
+ // background-color is just showing what the div is doing
+ .flex-wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+  }
+  
+  
+  // Making the div 80% means it will take up 80% of the screen and will shrink and grow based on screen size
+  // making the height auto is so when we wrap the div will grow and move other divs down and not have them overlap
+  //display flex is saying we are gonna use flex
+  //justify-content is taking our divs and spacing them out and around each other 
+  //flex-wrap is saying when it gets to small in the div the children of the div will drop down to fit this is key in making a responsive website!
+  //gap is making a space between the children divs 
+  //background-color is just showing what the div is doing
+  .flex-simple-container{
+    width: 80%;
+    height:auto;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: green;
+  }
+  
+  // by adding another div this will show you how it will push it down when the screen shrinks
+  // this could be an import component and it will behave the same  
+  .flex-simple-container-2{
+    background-color: darkgoldenrod;
+  }
+  
+  
+  // Key point is this content needs to have a size that is not % i like to use rems and this is 
+  //because we want this content to wrap depending on the screen size help making a responsive design 
+  // this is a simple card design
+  .flex-cards{
+    width: 20rem;
+    margin: 1rem;
+    padding: .5rem;
+  }
+  
+  //just some colors to help show the difference in the divs
+  .card-1{
+    background-color: dimgray;
+  }
+  
+  .card-2{
+    background-color:cornflowerblue;
+  }
+  
+  .card-3{
+    background-color:darkseagreen;
+  }
+  
+  
+  .card-4{
+    background-color:darkslateblue;
+  }
+  .card-5{
+    background-color:darkorchid;
+  }
+  
+  .card-6{
+    background-color:purple;
+  }
