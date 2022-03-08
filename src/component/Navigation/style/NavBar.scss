@@ -1,0 +1,21 @@
+.nav-wrapper{
+    width: 100%;
+    min-width: 100%;
+    height: 4rem;
+    display: flex;
+    background-color: darkgreen;
+}
+
+.nav-cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgb(202, 202, 202);
+}
