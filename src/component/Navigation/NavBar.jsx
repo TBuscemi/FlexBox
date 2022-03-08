@@ -5,10 +5,10 @@ import { useNavigate } from 'react-router-dom'
 
 export default function NavBar() {
     return (
-        <div className='nav-wrapper'>
-            <div className='nav-cont'>
-                <NavLink className='text-links' to="/">Home</NavLink>
-            </div>
-        </div>
+    <div className='nav-wrapper'>
+      <div className='nav-cont'>
+          <NavLink className='text-links' to="/">Home</NavLink>
+      </div>
+    </div>
   )
 }
