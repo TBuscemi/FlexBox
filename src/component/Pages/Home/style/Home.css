@@ -15,7 +15,6 @@
 }
 
 .flex-simple-container {
-  background-color: green;
   width: 80%;
   height: auto;
   display: -webkit-box;
@@ -27,6 +26,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 2rem;
+  background-color: green;
 }
 
 .flex-cards {
