@@ -1,0 +1,37 @@
+//display is saying that we are using grid and it will effect the divs in it
+//gap is setting the space between each div
+//padding is making space between other components around the div
+//width is setting the over all width of the div by making it a % it will adjust with the screen size
+//margin auto centered the div so its not one side or the other 
+// background color is showing you what the dic is doing and where it is
+
+.grid-wrapper{
+    display: grid;
+    gap: 1.5rem;
+    padding: 2rem;
+    width: 80%;
+    margin: auto;
+    background-color: black;
+}
+
+//@media is saying if the min with os bigger then 65 rem do this
+//by calling the grid-wrapper we are changing something once we hit 65 rem or greater
+//grid-template-columns:repeat this is saying that we are setting how many rows we want to have in this example 
+//we have 3 but if we made it 4 you would have 4 divs in each row
+// 1fr is for 1 part of the available space
+// now if we add more repeats() you can make a pattern where the divs are taking up different amount of space as showing below but it is 
+// commented out.
+@media( min-width: 65rem){
+    .grid-wrapper{
+        grid-template-columns:repeat(3, 1fr);
+        // grid-template-columns:repeat(1, 1fr) repeat(1, 2fr) repeat(1, 1fr);
+    }
+}
+
+// just adding some padding so the words aren't pressed against the edge of the card 
+// the colors of the cards are piggy backing off the flex card colors so go to SimpleFlex.scss to see that Css
+.grid-cards{
+    padding: 1rem;
+}
+
+
