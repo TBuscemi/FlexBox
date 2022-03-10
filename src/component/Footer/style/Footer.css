@@ -57,6 +57,7 @@
   z-index: 10;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
+  cursor: pointer;
 }
 
 .social-links a::after {

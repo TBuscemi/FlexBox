@@ -18,7 +18,8 @@
 }
 
 .hero-cont{
-    margin-top: 5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.56rem;
     display: flex;
     width: 100%;
     height: auto;
@@ -33,6 +34,8 @@
 }
 
 .hero-text{
+    // font-family: 'Tentacles';
+    font-weight: lighter;
     color: #F2D16B;
 }
 
@@ -48,7 +51,7 @@
     text-align: center;
     padding: .5rem;
     background-color: #01678f;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     box-shadow: 10px 10px 20px rgb(160, 223, 252);
     border-radius: 4%;
 }
