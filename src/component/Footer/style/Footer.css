@@ -1,0 +1,86 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-image: -webkit-gradient(linear, right top, left top, from(#002d3f), to(#00080f));
+  background-image: linear-gradient(to left, #002d3f, #00080f);
+  height: 10rem;
+  max-height: 100%;
+}
+
+.footer-container {
+  width: 80%;
+  margin: auto;
+}
+
+.social-links {
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4rem;
+  height: 3.7rem;
+  text-align: center;
+  text-decoration: none;
+  color: #faf5f5;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.social-links a .fab {
+  font-size: 30px;
+  line-height: 5.5rem;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.social-links a::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -90px;
+  left: 0;
+  background: linear-gradient(-45deg, #0173a0, #002d38);
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.social-links a:hover::after {
+  top: 0;
+}
+
+.social-links a:hover .fab {
+  color: #fff;
+}
+
+.social-links a:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+/*# sourceMappingURL=Footer.css.map */

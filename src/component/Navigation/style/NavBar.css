@@ -1,14 +1,52 @@
+@font-face {
+  font-family: 'Tentacles';
+  src: url("../../assets/Fonts/Tentacles.ttf.woff") format("woff"), url("../../assets/Fonts/Tentacles.ttf.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .nav-wrapper {
   width: 100%;
   min-width: 100%;
-  height: 4rem;
+  height: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: darkgreen;
 }
 
 .nav-cont {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-shadow: 15px 10px 15px black;
+          box-shadow: 15px 10px 15px black;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#00080f), to(#01678f));
+  background-image: linear-gradient(to bottom right, #00080f, #01678f);
+}
+
+.my-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  font-family: 'Tentacles';
+  color: #a0dffc;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-left: 3rem;
+}
+
+.nav-links {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -23,7 +61,11 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: #026179;
+}
+
+.text-links:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .text-links {
@@ -42,10 +84,5 @@
   transition: transform .2s, -webkit-transform .2s;
   color: #F2D16B;
   font-size: 1.2rem;
-}
-
-.text-links:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
 }
 /*# sourceMappingURL=NavBar.css.map */

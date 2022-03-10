@@ -2,6 +2,6 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #01294b;
+  background: radial-gradient(#00080f, #01294b);
 }
 /*# sourceMappingURL=App.css.map */
