@@ -34,6 +34,7 @@
 }
 
 .hero-text{
+    z-index: 1;
     // font-family: 'Tentacles';
     font-weight: lighter;
     color: #F2D16B;
@@ -48,6 +49,7 @@
 }
 
 .home-cards{
+    z-index: 2;
     text-align: center;
     padding: .5rem;
     background-color: #01678f;
@@ -58,16 +60,19 @@
 
 
 .skills-home{
-    
-    display: grid;
+    display: flex;
+    flex-direction: row;
     grid-template-columns: repeat(auto-fit, minmax(5rem,1fr));
-    gap: 5rem;
+    gap: 4rem;
     width: 80%;
     margin: auto;
     justify-content: center;
 }
 
-.skills-title{
+.skills-title-tech{
+    z-index: 2;
+    height: auto;
+    width: 100%;
     background-image: radial-gradient(#002d3f,#00080f);
     padding: 1.5rem;
     box-shadow: 0px 0px 15px 10px Rgb(160, 223, 252);
@@ -81,11 +86,31 @@
     &
     h1{
         color: #F2D16B;
+        min-width: 9.8rem;
+    }
+}
+.skills-title-learn{
+    z-index: 2;
+    height: 10%;
+    width: 100%;
+    background-image: radial-gradient(#002d3f,#00080f);
+    padding: 1.5rem;
+    box-shadow: 0px 0px 15px 10px Rgb(160, 223, 252);
+    border-radius: 20px;
+    text-decoration: underline;
+    text-decoration-color: #F2D16B;;
+    fill: white;
+    color: white;
+    text-align: center;
+    margin-bottom: 5rem;
+    &
+    h1{
+        color: #F2D16B;
+        min-width: 9.8rem;
     }
 }
 
 .tech-skills{
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(6rem,1fr));
     gap: 2rem;
@@ -99,7 +124,6 @@
 }
 
 .leaning-skills{
-    // background-color: rebeccapurple;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(6rem,1fr));
     gap: 2rem;
@@ -140,3 +164,88 @@
 
 
 
+.bubble {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    background-image: radial-gradient(#026288,#52606d);
+    border-radius: 55%;
+  }
+  
+  .bubble-sm {
+    height: 5%;
+    width: 3.5%;
+    left: 25%;
+    animation: bubbles-rise 3s infinite;
+  }
+  
+  .bubble-sm1 {
+    height: 5.5%;
+    width: 4%;
+    left: 35%;
+    animation: bubbles-rise 2.2s infinite;
+    animation-delay: 0.25s;
+  }
+  
+  .bubble-sm2 {
+    height: 8%;
+    width: 5.5%;
+    left: 55%;
+    animation: bubbles-rise 2.5s infinite;
+    animation-delay: 0.15s;
+  }
+  
+  .bubble-sm3 {
+    height: 6%;
+    width: 4.5%;
+    left: 50%;
+    animation: bubbles-rise 1.75s infinite;
+  }
+  
+  .bubble-sm4 {
+    height: 5%;
+    width: 3.5%;
+    left: 65%;
+    animation: bubbles-rise 2.5s infinite;
+    animation-delay: 0.1s;
+  }
+  
+  .bubble-sm5 {
+    height: 7.5%;
+    width: 6%;
+    left: 45%;
+    animation: bubbles-rise 2s infinite;
+    animation-delay: 0.1s;
+  }
+  
+  .bubble-sm6 {
+    height: 5%;
+    width: 3.5%;
+    left: 40%;
+    animation: bubbles-rise 3s infinite;
+    animation-delay: 0.2s;
+  }
+  
+  .bubble-md {
+    height: 10%;
+    width: 8%;
+    left: 15%;
+    animation: bubbles-rise 3.5s infinite;
+    animation-delay: 0.2s;
+  }
+  
+  .bubble-md1 {
+    height: 10%;
+    width: 8%;
+    left: 60%;
+    animation: bubbles-rise 2s infinite;
+    animation-delay: 0.25s;
+  }
+  
+  @keyframes bubbles-rise {
+      100% {
+          transform: translateY(-200px) scale(0.5);
+          opacity: 0;
+          animation-timing-function: ease-in;
+      }
+  }
