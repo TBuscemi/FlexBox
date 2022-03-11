@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import './style/Footer.css'
 import Modal from '../Modal/Modal'
+import Email from '../Email/Email'
 
 
 export default function Footer() {
@@ -23,7 +24,7 @@ export default function Footer() {
                 </div>
             </div>
             <Modal onClick={handleHideShow} hideShow={hideShow}>   
-                <h1> helllo </h1>
+                <Email/>
             </Modal>
         </div>
     )

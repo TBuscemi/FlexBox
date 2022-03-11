@@ -1,0 +1,33 @@
+.email-contact-wrapper {
+  text-align: center;
+  color: #F2D16B;
+}
+
+.contact-form {
+  text-align: center;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 63%;
+  margin: auto;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.label-contact {
+  width: 5rem;
+}
+
+.input-contact {
+  width: 10rem;
+  background-color: #f8f7f7;
+}
+
+.button-contact-submit {
+  position: absolute;
+  width: 10rem;
+  margin-left: 1.5rem;
+}
+/*# sourceMappingURL=Email.css.map */
