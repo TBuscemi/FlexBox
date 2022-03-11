@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ca696622.css",
-    "main.js": "/static/js/main.a567b16a.js",
+    "main.css": "/static/css/main.db6edf7b.css",
+    "main.js": "/static/js/main.ec8d132e.js",
     "static/media/Tentacles.ttf.svg": "/static/media/Tentacles.ttf.c6fbcdb8ab97016f1623.svg",
     "static/media/Tentacles.ttf.woff": "/static/media/Tentacles.ttf.aad88bf78cafc2a1e0d3.woff",
     "index.html": "/index.html",
-    "main.ca696622.css.map": "/static/css/main.ca696622.css.map",
-    "main.a567b16a.js.map": "/static/js/main.a567b16a.js.map"
+    "main.db6edf7b.css.map": "/static/css/main.db6edf7b.css.map",
+    "main.ec8d132e.js.map": "/static/js/main.ec8d132e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca696622.css",
-    "static/js/main.a567b16a.js"
+    "static/css/main.db6edf7b.css",
+    "static/js/main.ec8d132e.js"
   ]
 }

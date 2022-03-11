@@ -5,7 +5,7 @@ const Email = () => {
   return (
     <div className='email-contact-wrapper'>
       <h1>Contact Information</h1>
-      <form method="POST" action="https://formsubmit.co/polarbear494@gmail.com" enctype="multipart/form-data" className='contact-form'>
+      <form method="POST" action="https://formsubmit.co/dafbd596c905ab3fc531ede65e9ceaad" enctype="multipart/form-data" className='contact-form'>
         <label className='label-contact' htmlFor="" >First Name</label>
         <input className='input-contact' type="text" name='Fname' required />
         
@@ -13,7 +13,7 @@ const Email = () => {
         <input className='input-contact' type="text" name='Lname' required/>
         
         <label className='label-contact' htmlFor="">Linkedin</label>
-        <input className='input-contact'type="text" name='Linkedin' required/>
+        <input className='input-contact'type="text" name='Linkedin'/>
         
         <label className='label-contact' htmlFor=""> Company</label>
         <input className='input-contact'type="text" name='company' required/>

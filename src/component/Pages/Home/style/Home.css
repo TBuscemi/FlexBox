@@ -30,7 +30,7 @@
   width: 60%;
   height: auto;
   text-align: center;
-  font-size: 3rem;
+  font-size: calc(30px + .2vw);
 }
 
 .hero-text {
@@ -55,6 +55,63 @@
   -webkit-box-shadow: 10px 10px 20px #a0dffc;
           box-shadow: 10px 10px 20px #a0dffc;
   border-radius: 4%;
+}
+
+.skills-home {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(5rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 5rem;
+  width: 80%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills-title {
+  background-image: radial-gradient(#002d3f, #00080f);
+  padding: 1.5rem;
+  -webkit-box-shadow: 0px 0px 15px 10px Rgb(160, 223, 252);
+          box-shadow: 0px 0px 15px 10px Rgb(160, 223, 252);
+  border-radius: 20px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #F2D16B;
+          text-decoration-color: #F2D16B;
+  fill: white;
+  color: white;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.skills-title h1 {
+  color: #F2D16B;
+}
+
+.tech-skills {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(6rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  gap: 2rem;
+  width: 100%;
+  height: auto;
+}
+
+.skills-home-icon {
+  width: 100%;
+  height: 8rem;
+}
+
+.leaning-skills {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(6rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  gap: 2rem;
+  width: 100%;
+  height: auto;
 }
 
 @media (min-width: 60rem) {
