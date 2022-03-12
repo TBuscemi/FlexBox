@@ -1,0 +1,71 @@
+.hero-cont {
+  margin-top: 2.5rem;
+  margin-bottom: 2.56rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero {
+  width: 60%;
+  height: auto;
+  text-align: center;
+  font-size: calc(30px + .2vw);
+}
+
+.hero-text {
+  z-index: 2;
+  font-weight: lighter;
+  color: #F2D16B;
+}
+
+.home-card-cont {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  width: 80%;
+  margin: auto;
+  color: #F2D16B;
+}
+
+.home-cards {
+  z-index: 2;
+  text-align: center;
+  padding: .5rem;
+  background-color: #01678f;
+  margin-bottom: 7rem;
+  -webkit-box-shadow: 10px 10px 20px #a0dffc;
+          box-shadow: 10px 10px 20px #a0dffc;
+  border-radius: 4%;
+}
+
+@media (min-width: 60rem) {
+  .home-card-cont {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 59.99rem) {
+  .home-card-cont {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 44rem) {
+  .home-card-cont {
+    width: 60%;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .icon {
+    width: 15rem;
+  }
+}
+/*# sourceMappingURL=HeroHomePage.css.map */

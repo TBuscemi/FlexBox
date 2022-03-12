@@ -1,0 +1,116 @@
+.bubble {
+  z-index: 0;
+  margin-left: 0rem;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  background-image: radial-gradient(#026288, #52606d);
+  border-radius: 55%;
+}
+
+.bubble-sm {
+  height: 5rem;
+  width: 5rem;
+  left: 25%;
+  -webkit-animation: bubbles-rise 3s infinite;
+          animation: bubbles-rise 3s infinite;
+}
+
+.bubble-sm1 {
+  height: 5rem;
+  width: 5rem;
+  left: 35%;
+  -webkit-animation: bubbles-rise 2.2s infinite;
+          animation: bubbles-rise 2.2s infinite;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.bubble-sm2 {
+  height: 8rem;
+  width: 8rem;
+  left: 55%;
+  -webkit-animation: bubbles-rise 2.5s infinite;
+          animation: bubbles-rise 2.5s infinite;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+
+.bubble-sm3 {
+  height: 6rem;
+  width: 6rem;
+  left: 50%;
+  -webkit-animation: bubbles-rise 1.75s infinite;
+          animation: bubbles-rise 1.75s infinite;
+}
+
+.bubble-sm4 {
+  height: 5rem;
+  width: 5rem;
+  left: 65%;
+  -webkit-animation: bubbles-rise 2.5s infinite;
+          animation: bubbles-rise 2.5s infinite;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.bubble-sm5 {
+  height: 7rem;
+  width: 7rem;
+  left: 45%;
+  -webkit-animation: bubbles-rise 2s infinite;
+          animation: bubbles-rise 2s infinite;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.bubble-sm6 {
+  height: 5rem;
+  width: 5rem;
+  left: 40%;
+  -webkit-animation: bubbles-rise 3s infinite;
+          animation: bubbles-rise 3s infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.bubble-md {
+  height: 10rem;
+  width: 10rem;
+  left: 15%;
+  -webkit-animation: bubbles-rise 3.5s infinite;
+          animation: bubbles-rise 3.5s infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.bubble-md1 {
+  height: 10rem;
+  width: 10rem;
+  left: 60%;
+  -webkit-animation: bubbles-rise 2s infinite;
+          animation: bubbles-rise 2s infinite;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+@-webkit-keyframes bubbles-rise {
+  100% {
+    -webkit-transform: translateY(-200px) scale(0.5);
+            transform: translateY(-200px) scale(0.5);
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+
+@keyframes bubbles-rise {
+  100% {
+    -webkit-transform: translateY(-200px) scale(0.5);
+            transform: translateY(-200px) scale(0.5);
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+/*# sourceMappingURL=BubblesAnimation.css.map */
