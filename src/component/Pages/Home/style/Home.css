@@ -14,6 +14,7 @@
 }
 
 .hero-cont {
+  z-index: 2;
   margin-top: 2.5rem;
   margin-bottom: 2.56rem;
   display: -webkit-box;
@@ -27,6 +28,7 @@
 }
 
 .hero {
+  z-index: 2;
   width: 60%;
   height: auto;
   text-align: center;
@@ -34,12 +36,13 @@
 }
 
 .hero-text {
-  z-index: 1;
+  z-index: 2;
   font-weight: lighter;
   color: #F2D16B;
 }
 
 .home-card-cont {
+  z-index: 2;
   display: -ms-grid;
   display: grid;
   gap: 2rem;
@@ -96,6 +99,7 @@
 }
 
 .skills-title-tech h1 {
+  z-index: 2;
   color: #F2D16B;
   min-width: 9.8rem;
 }
