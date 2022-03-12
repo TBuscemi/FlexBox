@@ -174,6 +174,7 @@
 }
 
 .bubble {
+  margin-left: 0rem;
   bottom: 0;
   width: 100%;
   position: fixed;
@@ -182,16 +183,16 @@
 }
 
 .bubble-sm {
-  height: 5%;
-  width: 3.5%;
+  height: 5rem;
+  width: 5rem;
   left: 25%;
   -webkit-animation: bubbles-rise 3s infinite;
           animation: bubbles-rise 3s infinite;
 }
 
 .bubble-sm1 {
-  height: 5.5%;
-  width: 4%;
+  height: 5rem;
+  width: 5rem;
   left: 35%;
   -webkit-animation: bubbles-rise 2.2s infinite;
           animation: bubbles-rise 2.2s infinite;
@@ -200,8 +201,8 @@
 }
 
 .bubble-sm2 {
-  height: 8%;
-  width: 5.5%;
+  height: 8rem;
+  width: 8rem;
   left: 55%;
   -webkit-animation: bubbles-rise 2.5s infinite;
           animation: bubbles-rise 2.5s infinite;
@@ -210,16 +211,16 @@
 }
 
 .bubble-sm3 {
-  height: 6%;
-  width: 4.5%;
+  height: 6rem;
+  width: 6rem;
   left: 50%;
   -webkit-animation: bubbles-rise 1.75s infinite;
           animation: bubbles-rise 1.75s infinite;
 }
 
 .bubble-sm4 {
-  height: 5%;
-  width: 3.5%;
+  height: 5rem;
+  width: 5rem;
   left: 65%;
   -webkit-animation: bubbles-rise 2.5s infinite;
           animation: bubbles-rise 2.5s infinite;
@@ -228,8 +229,8 @@
 }
 
 .bubble-sm5 {
-  height: 7.5%;
-  width: 6%;
+  height: 7rem;
+  width: 7rem;
   left: 45%;
   -webkit-animation: bubbles-rise 2s infinite;
           animation: bubbles-rise 2s infinite;
@@ -238,8 +239,8 @@
 }
 
 .bubble-sm6 {
-  height: 5%;
-  width: 3.5%;
+  height: 5rem;
+  width: 5rem;
   left: 40%;
   -webkit-animation: bubbles-rise 3s infinite;
           animation: bubbles-rise 3s infinite;
@@ -248,8 +249,8 @@
 }
 
 .bubble-md {
-  height: 10%;
-  width: 8%;
+  height: 10rem;
+  width: 10rem;
   left: 15%;
   -webkit-animation: bubbles-rise 3.5s infinite;
           animation: bubbles-rise 3.5s infinite;
@@ -258,8 +259,8 @@
 }
 
 .bubble-md1 {
-  height: 10%;
-  width: 8%;
+  height: 10rem;
+  width: 10rem;
   left: 60%;
   -webkit-animation: bubbles-rise 2s infinite;
           animation: bubbles-rise 2s infinite;
