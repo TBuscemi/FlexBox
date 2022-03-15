@@ -16,6 +16,12 @@ function SkillsHome() {
   
   return (
     <div>
+      <div className='about-me-text'>
+          <h1>About Me!</h1>
+        <h2>Hello! My name is Thomas and I'm a recent graduate from devCodeCamp. I graduated with a Certificate of Completion in Full Stack Development.
+        <br/><br/>I found that I have a passion for coding, especially in regards to animated elements on webpages and searching through code for bugs to fix. Prior to coding, I have always been a hard worker, completing any tasks given to me accurately and in a timely manner.<br/><br/>
+            Outside of programming, my hobbies mostly center around gaming, from table top gaming to video games. I'm also a proud father of two littles ones and they're a very central part of my life.</h2>
+       </div>
       <div className='skills-home'>
         <div className='skills-title-tech'>
           <h1 className='h1-title-tag'  
