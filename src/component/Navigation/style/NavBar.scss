@@ -62,3 +62,16 @@
   color: #F2D16B;
   font-size: 1.2rem;
 }
+
+@media(max-width: 48rem){
+  .nav-links{
+    display: none;
+  }
+
+  .nav-cont{
+    justify-content: flex-start;
+  }
+
+  
+}
+

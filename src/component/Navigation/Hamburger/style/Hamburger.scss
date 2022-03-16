@@ -1,0 +1,167 @@
+@import '../../../../../node_modules/mathsass/dist/math';
+// "node_modules/mathsass/dist/math";
+//vars
+$pi:3.14;
+//config
+$menu-items:4;
+$open-distance:115px;
+
+
+
+%goo{
+  filter:url('#shadowed-goo');
+}
+
+%ball{
+  // display: none;
+  background:#01294b;
+  border-radius:100%;
+  width: 4rem;
+  height: 4rem;
+  position:absolute;
+  margin-top: .9rem;
+  color:#F2D16B;
+  text-align:center;
+  line-height:60px;
+  transform:translate3d(0,0,0);
+  transition:transform ease-out 200ms;
+}
+
+.ham-wrapper{
+
+  margin-right: 1.5rem;
+  position: absolute;
+  display: flex;
+  width: 100%;
+
+  &h1, h2, h3, h4{
+    margin: auto;
+  }
+  &h1{
+    font-size:3em;
+  }
+}
+
+.svg-div{
+  width: 0%;
+}
+
+.menu-open{
+  display:none;
+}
+
+.menu-item{
+  @extend %ball;
+}
+
+.svg-div{
+  position: absolute;
+}
+
+.hamburger{
+  $width:25px;
+  $height:3px;
+  width:$width;
+  height:$height;
+  background:#F2D16B;
+  display:block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-$width/2;
+  margin-top:-$height/2;
+  transition:transform 200ms;
+}
+
+$hamburger-spacing:8px;
+.hamburger-1{
+  transform:translate3d(0,-$hamburger-spacing,0);
+}
+.hamburger-2{
+  transform:translate3d(0,0,0);
+}
+.hamburger-3{
+  transform:translate3d(0,$hamburger-spacing,0);
+}
+
+.menu-open:checked+.menu-open-button{
+  .hamburger-1{
+    transform:translate3d(0,0,0) rotate(45deg); 
+  }
+  .hamburger-2{
+    transform:translate3d(0,0,0) scale(0.1,1);
+  }
+  .hamburger-3{
+    transform:translate3d(0,0,0) rotate(-45deg); 
+  }
+}
+
+.menu{
+  position: relative;
+  margin-right: 1.5rem;
+  justify-content: end;
+  width: 100%;
+  display: none;
+  z-index: 3;
+  @extend %goo;
+  box-sizing:border-box;
+  font-size:20px;
+  text-align:left;
+}
+
+.menu-item{
+  &:hover{
+    background:#F2D16B;
+    color:#01294b;
+  }
+
+  @for $i from 1 through $menu-items{
+    &:nth-child(#{$i+2}){
+      transition-duration:10ms+(60ms*($i));
+    }
+  }
+}
+
+.menu-open-button{
+  @extend %ball;
+  z-index:2;
+  transition-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  transition-duration:400ms;
+  transform:scale(1.1,1.1) translate3d(0,0,0);
+  cursor:pointer;
+}
+
+.menu-open-button:hover{
+  transform:scale(1.2,1.2) translate3d(0,0,0);
+}
+
+.menu-open:checked+.menu-open-button{
+  transition-timing-function:linear;
+  transition-duration:200ms;
+  transform:scale(.9,0.8) translate3d(0,0,0);
+}
+
+.menu-open:checked~.menu-item{
+    transition-timing-function:cubic-bezier(0.165, 0, 0, 1.000);
+    @for $i from 1 through $menu-items{
+  
+      &:nth-child(#{$i+2}){
+        transition-duration:90ms+(100ms*$i);
+        //adjust the spacing of the orbs
+        transform:translate3d(0,65px*$i, 0px);
+    }
+  }
+}
+
+@media(max-width: 48rem){
+  .menu{
+    position: absolute;
+    display: flex;
+  }
+
+    .ham-wrapper{
+      margin-right: 1.5rem;
+      position: relative;
+  }  
+}
+  
