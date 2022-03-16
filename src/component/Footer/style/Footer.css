@@ -106,6 +106,7 @@
 }
 
 .social-links a:hover {
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
   z-index: 2;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);

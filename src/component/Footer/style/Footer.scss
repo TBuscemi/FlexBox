@@ -48,6 +48,7 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.5s;
+    
 }
 
 .social-links a .fab {
@@ -82,6 +83,7 @@ content: '';
 }
 
 .social-links a:hover {
+    -webkit-box-reflect: below 4px -webkit-gradient(linear, left top, left bottom, from(transparent);
     z-index: 2;
     transform: translateY(-10px);
 }

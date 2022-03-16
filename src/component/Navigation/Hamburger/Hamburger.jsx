@@ -12,9 +12,9 @@ function Hamburger() {
           <span class="hamburger hamburger-2"></span>
           <span class="hamburger hamburger-3"></span>
         </label>
-            <NavLink className=' menu-item' to="/">Home</NavLink>
-            <NavLink className=' menu-item' to="/simpleflex">Flex</NavLink>
-            <NavLink className=' menu-item' to="/simplegrid">Grid</NavLink>
+        <NavLink className=' menu-item' to="/">Home</NavLink>
+        <NavLink className=' menu-item' to="/simpleflex">Flex</NavLink>
+        <NavLink className=' menu-item' to="/simplegrid">Grid</NavLink>
       </nav>
       <svg className='svg-div' xmlns="http://www.w3.org/2000/svg" version="1.1">
           <defs>
@@ -35,7 +35,6 @@ function Hamburger() {
           </defs>
       </svg>
     </div>
-
   )
 }
 

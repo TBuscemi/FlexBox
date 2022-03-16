@@ -6,14 +6,13 @@ $pi:3.14;
 $menu-items:4;
 $open-distance:115px;
 
-
-
+// this is calling the svg
 %goo{
   filter:url('#shadowed-goo');
 }
 
+// this is the styling for the menu balls
 %ball{
-  // display: none;
   background:#01294b;
   border-radius:100%;
   width: 4rem;
@@ -27,29 +26,26 @@ $open-distance:115px;
   transition:transform ease-out 200ms;
 }
 
+// this is putting the menu in place where it sits on the nav bar and also makes it so at bigger sizes it wont shift over the normal nav links 
+// using position absolute 
 .ham-wrapper{
-
   margin-right: 1.5rem;
   position: absolute;
   display: flex;
   width: 100%;
-
-  &h1, h2, h3, h4{
-    margin: auto;
-  }
-  &h1{
-    font-size:3em;
-  }
 }
 
+// this fixed the svg which was going really far to the right causing a scroll bar at smaller sizes 
 .svg-div{
   width: 0%;
 }
 
+// this is hiding your menu whan the size is to big and is changed in a media point below
 .menu-open{
   display:none;
 }
 
+//this is making all the balls for the links
 .menu-item{
   @extend %ball;
 }
@@ -58,21 +54,19 @@ $open-distance:115px;
   position: absolute;
 }
 
+// this is positioning the line in the hamburger 
 .hamburger{
-  $width:25px;
-  $height:3px;
-  width:$width;
-  height:$height;
+  width:1.6rem;
+  height:.2rem;
+  margin-left: 1.2rem;
+  margin-top: 1.9rem;
   background:#F2D16B;
   display:block;
   position:absolute;
-  top:50%;
-  left:50%;
-  margin-left:-$width/2;
-  margin-top:-$height/2;
   transition:transform 200ms;
 }
 
+// this is the lines that turn into the X when clicked
 $hamburger-spacing:8px;
 .hamburger-1{
   transform:translate3d(0,-$hamburger-spacing,0);
@@ -96,6 +90,7 @@ $hamburger-spacing:8px;
   }
 }
 
+// getting the over all ham in place and hidden 
 .menu{
   position: relative;
   margin-right: 1.5rem;
@@ -109,50 +104,37 @@ $hamburger-spacing:8px;
   text-align:left;
 }
 
-.menu-item{
-  &:hover{
-    background:#F2D16B;
-    color:#01294b;
-  }
-
-  @for $i from 1 through $menu-items{
-    &:nth-child(#{$i+2}){
-      transition-duration:10ms+(60ms*($i));
-    }
-  }
+// when hover over a menu item it will change color
+.menu-item:hover{
+  background:#F2D16B;
+  color:#01294b;
 }
 
+// makes a pointer and makes sure it goes over other content
 .menu-open-button{
   @extend %ball;
   z-index:2;
-  transition-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1.275);
-  transition-duration:400ms;
-  transform:scale(1.1,1.1) translate3d(0,0,0);
   cursor:pointer;
 }
 
+//make the ham get bigger when hovered
 .menu-open-button:hover{
   transform:scale(1.2,1.2) translate3d(0,0,0);
 }
 
-.menu-open:checked+.menu-open-button{
-  transition-timing-function:linear;
-  transition-duration:200ms;
-  transform:scale(.9,0.8) translate3d(0,0,0);
-}
-
+// this is controlling the way the nav bar deploys down
 .menu-open:checked~.menu-item{
-    transition-timing-function:cubic-bezier(0.165, 0, 0, 1.000);
     @for $i from 1 through $menu-items{
-  
       &:nth-child(#{$i+2}){
         transition-duration:90ms+(100ms*$i);
-        //adjust the spacing of the orbs
+        //adjust the spacing of the balls
         transform:translate3d(0,65px*$i, 0px);
     }
   }
 }
 
+
+//triggering the change in nav bars
 @media(max-width: 48rem){
   .menu{
     position: absolute;
