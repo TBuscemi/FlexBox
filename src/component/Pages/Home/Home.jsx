@@ -6,6 +6,7 @@ import Footer from '../../Footer/Footer'
 import BubblesAnimation from '../../BubblesAnimation/BubblesAnimation'
 import HeroHomePage from '../../HeroHomePage/HeroHomePage'
 import SkillsHome from '../../SkillsHome/SkillsHome'
+import MyProjects from '../../MyProjects/MyProjects'
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
         <BubblesAnimation/>
         <HeroHomePage/>
         <SkillsHome/>
+        <MyProjects/>
         <Footer/>
       </div>
     </div>

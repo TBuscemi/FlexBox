@@ -1,5 +1,6 @@
 import React from 'react'
 import './style/HeroHomePage.css'
+import Test from '../Test/Test'
 
 function HeroHomePage() {
   return (
@@ -31,6 +32,7 @@ function HeroHomePage() {
           <p>I'm most certainly NOT a deep sea monster, so that's a plus.</p>
         </div>
       </div>
+      <Test/>
     </div>
   )
 }

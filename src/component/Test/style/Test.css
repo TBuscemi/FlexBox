@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=Test.css.map */
+canvas {
+  display: block;
+  vertical-align: top;
+}
+
+#tsparticles {
+  width: 100%;
+}
+/*# sourceMappingURL=Test.css.map */

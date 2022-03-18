@@ -1,29 +1,10 @@
-.hero-cont{
-    z-index: 2;
-    margin-top: 2.5rem;
-    margin-bottom: 2.56rem;
-    display: flex;
+.my-project-wrapper{
     width: 100%;
-    height: auto;
+    display: flex;
     justify-content: center;
 }
 
-.hero{background-color: rgba(255, 0, 0, 0);
-    z-index: 2;
-    width: 60%;
-    height: auto;
-    text-align: center;
-    font-size: calc(30px + .2vw);
-}
-
-.hero-text{
-    z-index: 2;
-    // font-family: 'Tentacles';
-    font-weight: lighter;
-    color: #F2D16B;
-}
-
-.home-card-cont{
+.my-project-container{
     display: grid;
     gap: 2rem;
     width: 80%;
@@ -31,7 +12,7 @@
     color: #F2D16B;
 }
 
-.home-cards{
+.project-cards{
     z-index: 2;
     text-align: center;
     padding: .5rem;
@@ -39,20 +20,37 @@
     margin-bottom: 5rem;
     box-shadow: 10px 10px 20px rgb(160, 223, 252);
     border-radius: 4%;
-    
 }
 
 
+.project-card-title{
+  border-bottom-style:solid;
+}
+
+.project-card-body{
+font-size: 16px;
+}
+
+.icon-project{
+  height: auto;
+  width: 10rem;
+}
+
+.project-card-footer{
+  border-top-style:solid;
+}
+
 @media(min-width: 60rem){
-    .home-card-cont{
+    .my-project-container{
         // background-color: red;
         grid-template-columns:repeat(4, 1fr);
         // grid-template-columns:repeat(1, 1fr) repeat(1, 2fr) repeat(1, 1fr);
     }
 }
 
+
 @media(max-width: 59.99rem){
-    .home-card-cont{
+    .my-project-container{
         // background-color: red;
         grid-template-columns:repeat(2, 1fr);
         // grid-template-columns:repeat(1, 1fr) repeat(1, 2fr) repeat(1, 1fr);
@@ -60,13 +58,10 @@
 }
 
 @media(max-width: 44rem){
-    .home-card-cont{
+    .my-project-container{
         width: 60%;
         // background-color: red;
         grid-template-columns:repeat(1, 1fr);
         // grid-template-columns:repeat(1, 1fr) repeat(1, 2fr) repeat(1, 1fr);
-    }
-    .icon{
-        width: 15rem;
     }
 }
