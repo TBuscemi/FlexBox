@@ -5,9 +5,11 @@
 }
 
 .my-project-container{
+    align-items: baseline;
     display: grid;
     gap: 2rem;
     width: 80%;
+    height: 10%;
     margin: auto;
     color: #F2D16B;
 }
@@ -16,28 +18,51 @@
     z-index: 2;
     text-align: center;
     padding: .5rem;
-    background-color: #01678f;
     margin-bottom: 5rem;
-    box-shadow: 10px 10px 20px rgb(160, 223, 252);
+    box-shadow: 3px 3px 30px rgb(160, 223, 252);
     border-radius: 4%;
 }
 
 
 .project-card-title{
-  border-bottom-style:solid;
+    height: 1rem;
+    padding-bottom: 2rem;
 }
 
 .project-card-body{
 font-size: 16px;
 }
 
+.border-above-tech{
+    padding-top: 1rem;
+}
+
 .icon-project{
   height: auto;
   width: 10rem;
+  fill: white;
 }
 
 .project-card-footer{
-  border-top-style:solid;
+  border-top-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  
+}
+
+.fab{
+    fill: white;
+    color: white;
+    margin: 1rem;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.fab:hover{
+    transform: scale(1.5);
 }
 
 @media(min-width: 60rem){

@@ -5,4 +5,8 @@ html, body {
   padding: 0;
   background: radial-gradient(#00080f, #01294b);
 }
+
+p {
+  font-size: 1.25rem;
+}
 /*# sourceMappingURL=App.css.map */
