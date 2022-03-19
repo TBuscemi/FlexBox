@@ -135,7 +135,7 @@ $hamburger-spacing:10px;
 
 
 //triggering the change in nav bars
-@media(max-width: 48rem){
+@media(max-width: 1000px){
   .menu{
     position: absolute;
     display: flex;

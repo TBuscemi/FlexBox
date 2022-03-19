@@ -10,7 +10,7 @@ export default function SimpleGrid() {
       </div>
       <h1 className='explain-flex'> This is a simple example of how to use  Grid to layout your website</h1>
         <h1 className='explain-flex'> <a href="https://github.com/TBuscemi/FlexBox/blob/main/src/component/Pages/SimpleGrid/SimpleGrid.jsx" target='blank'>Click Me</a> to go to Html of the project </h1>
-        <h1 className='explain-flex'> <a href="https://github.com/TBuscemi/FlexBox/blob/main/src/component/Pages/SimpleGrid/style/SimpleGrid.scss" target='blank'>Click Me</a> to go to Scss of the project</h1>
+        <h1 className='explain-flex'> <a href="https://github.com/TBuscemi/FlexBox/blob/main/src/component/Pages/SimpleGrid/style/SimpleGrid.scss" target='blank'>Click Me</a> to go to Scss of the project <br/>When using this code as a example make sure you use the code in the Scss file not the Css file.</h1>
       <div className='grid-wrapper'>
         
         <div className='grid-cards card-1' >

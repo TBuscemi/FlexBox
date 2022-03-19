@@ -10,7 +10,7 @@ export default function SimpleFlex() {
       <div className='flex-wrapper'>
         <h1 className='explain-flex'> This is a simple example of how to use Flexbox to layout your website</h1>
         <h1 className='explain-flex'> <a href="https://github.com/TBuscemi/FlexBox/blob/main/src/component/Pages/SimpleFlex/SimpleFlex.jsx" target='blank'>Click Me</a> to go to Html of the project </h1>
-        <h1 className='explain-flex'> <a href="https://github.com/TBuscemi/FlexBox/blob/main/src/component/Pages/SimpleFlex/style/SimpleFlex.scss" target='blank'>Click Me</a> to go to Scss of the project</h1>
+        <h1 className='explain-flex'> <a href="https://github.com/TBuscemi/FlexBox/blob/main/src/component/Pages/SimpleFlex/style/SimpleFlex.scss" target='blank'>Click Me</a> to go to Scss of the project <br/>When using this code as a example make sure you use the code in the Scss file not the Css file.</h1>
         <div className='flex-simple-container'>
           <div className='flex-cards card-1'>
             <h1>1</h1>

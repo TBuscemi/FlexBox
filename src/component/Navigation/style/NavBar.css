@@ -89,7 +89,7 @@
   font-size: 2rem;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 1000px) {
   .nav-links {
     display: none;
   }

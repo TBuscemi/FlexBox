@@ -144,7 +144,7 @@
           transform: translate3d(0, 480px, 0px);
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 1000px) {
   .menu {
     position: absolute;
     display: -webkit-box;
