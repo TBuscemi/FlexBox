@@ -36,6 +36,8 @@
 }
 
 .my-name {
+  text-decoration: none;
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +75,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 1rem;
+  margin-right: 2.5rem;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,7 +86,7 @@
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
   color: #F2D16B;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 @media (max-width: 48rem) {

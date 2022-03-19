@@ -1,6 +1,7 @@
 
 
 html, body { 
+    overflow: auto;
     height: 100%;
     width: auto;
     margin: 0;
@@ -11,4 +12,8 @@ html, body {
 
 p{
     font-size: 1.25rem;
+}
+
+a{
+    font-size: 2rem;
 }

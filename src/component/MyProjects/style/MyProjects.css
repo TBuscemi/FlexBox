@@ -3,12 +3,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+.project-title {
+  margin-bottom: 2rem;
+  color: #F2D16B;
 }
 
 .my-project-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -44,9 +55,27 @@
   padding-top: 1rem;
 }
 
-.icon-project {
+.icon-project-1 {
   height: auto;
   width: 10rem;
+  fill: white;
+}
+
+.icon-project-2 {
+  height: auto;
+  width: 15rem;
+  fill: white;
+}
+
+.icon-project-3 {
+  height: auto;
+  width: 10rem;
+  fill: white;
+}
+
+.icon-project-4 {
+  height: auto;
+  width: 9.5rem;
   fill: white;
 }
 

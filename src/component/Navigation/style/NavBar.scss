@@ -29,6 +29,8 @@
 }
 
 .my-name{
+  text-decoration: none;
+  margin-top: 2rem;
   display:flex ;
   height: auto;
   font-family: 'Tentacles';
@@ -56,13 +58,13 @@
 
 .text-links{
   align-items: center;
-  margin-right: 1rem;
+  margin-right: 2.5rem;
   height: 100%;
   display: flex;
   text-decoration: none;
   transition: transform .2s;
   color: #F2D16B;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 @media(max-width: 48rem){

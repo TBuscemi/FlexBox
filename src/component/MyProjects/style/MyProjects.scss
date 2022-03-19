@@ -1,10 +1,18 @@
 .my-project-wrapper{
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
 }
 
+.project-title{
+    margin-bottom: 2rem;
+    color: #F2D16B;
+} 
+
 .my-project-container{
+    justify-content: center;
     align-items: baseline;
     display: grid;
     gap: 2rem;
@@ -30,16 +38,31 @@
 }
 
 .project-card-body{
-font-size: 16px;
+    font-size: 16px;
 }
 
 .border-above-tech{
     padding-top: 1rem;
 }
 
-.icon-project{
+.icon-project-1{
   height: auto;
   width: 10rem;
+  fill: white;
+}
+.icon-project-2{
+  height: auto;
+  width: 15rem;
+  fill: white;
+}
+.icon-project-3{
+  height: auto;
+  width: 10rem;
+  fill: white;
+}
+.icon-project-4{
+  height: auto;
+  width: 9.5rem;
   fill: white;
 }
 
@@ -90,3 +113,4 @@ font-size: 16px;
         // grid-template-columns:repeat(1, 1fr) repeat(1, 2fr) repeat(1, 1fr);
     }
 }
+

@@ -15,13 +15,13 @@ $open-distance:115px;
 %ball{
   background:#01294b;
   border-radius:100%;
-  width: 4rem;
-  height: 4rem;
+  width: 6rem;
+  height: 6rem;
   position:absolute;
-  margin-top: .9rem;
+  margin-top: 0rem;
   color:#F2D16B;
   text-align:center;
-  line-height:60px;
+  line-height:90px;
   transform:translate3d(0,0,0);
   transition:transform ease-out 200ms;
 }
@@ -56,10 +56,10 @@ $open-distance:115px;
 
 // this is positioning the line in the hamburger 
 .hamburger{
-  width:1.6rem;
+  width:2.2rem;
   height:.2rem;
-  margin-left: 1.2rem;
-  margin-top: 1.9rem;
+  margin-left: 2rem;
+  margin-top: 2.9rem;
   background:#F2D16B;
   display:block;
   position:absolute;
@@ -67,7 +67,7 @@ $open-distance:115px;
 }
 
 // this is the lines that turn into the X when clicked
-$hamburger-spacing:8px;
+$hamburger-spacing:10px;
 .hamburger-1{
   transform:translate3d(0,-$hamburger-spacing,0);
 }
@@ -128,7 +128,7 @@ $hamburger-spacing:8px;
       &:nth-child(#{$i+2}){
         transition-duration:90ms+(100ms*$i);
         //adjust the spacing of the balls
-        transform:translate3d(0,65px*$i, 0px);
+        transform:translate3d(0,120px*$i, 0px);
     }
   }
 }

@@ -9,7 +9,7 @@ export default function NavBar() {
     <div className='nav-wrapper'>
       <div className='nav-cont'>
         <div>
-          <h2 className='my-name'>TB.u,s.c.e,m.i</h2>
+          <NavLink className='my-name' to="/">TB.u,s.c.e,m.i</NavLink>
         </div>
           <div className='nav-links'>
             <NavLink className='text-links' to="/">Home</NavLink>
