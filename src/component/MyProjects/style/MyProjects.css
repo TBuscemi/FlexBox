@@ -95,7 +95,7 @@
   width: 100%;
 }
 
-.fab {
+.project-social {
   fill: white;
   color: white;
   margin: 1rem;
@@ -103,7 +103,7 @@
   cursor: pointer;
 }
 
-.fab:hover {
+.project-social:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }

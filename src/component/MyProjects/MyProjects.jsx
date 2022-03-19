@@ -29,7 +29,7 @@ function MyProjects() {
           <div className='project-card-footer'>
             {/* <a href="https://github.com/TBuscemi/" target='_blank'><i class="fa-brands fa-github fab"></i></a> */}
             <a href='https://the-goblin-camp.web.app/' target='_blank'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-window-fullscreen fab" viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-window-fullscreen fab project-social" viewBox="0 0 16 16">
                 <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"/>
                 <path d="M.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H.5ZM1 5V2h14v3H1Zm0 1h14v8H1V6Z"/>
               </svg>
@@ -51,7 +51,7 @@ function MyProjects() {
             </p>
           </div>
           <div className='project-card-footer'>
-            <a href="https://github.com/TBuscemi/DiceRollerKotlin" target='_blank'><i class="fa-brands fa-github fab"></i></a>
+            <a href="https://github.com/TBuscemi/DiceRollerKotlin" target='_blank'><i class="fa-brands fa-github fab project-social"></i></a>
             {/* <a>
               <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-window-fullscreen fab" viewBox="0 0 16 16">
                 <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"/>
@@ -75,7 +75,7 @@ function MyProjects() {
             </p>
           </div>
           <div className='project-card-footer'>
-            <a href="https://github.com/giuseppe-g-gelardi/Django_Trash_collector" target='_blank'><i class="fa-brands fa-github fab"></i></a>
+            <a href="https://github.com/giuseppe-g-gelardi/Django_Trash_collector" target='_blank'><i class="fa-brands fa-github fab project-social"></i></a>
             {/* <a>
               <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-window-fullscreen fab" viewBox="0 0 16 16">
                 <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"/>
@@ -99,9 +99,9 @@ function MyProjects() {
             </p>
           </div>
           <div className='project-card-footer'>
-            <a href="https://github.com/TBuscemi/TBuscemi.github.io" target='_blank'><i class="fa-brands fa-github fab"></i></a>
+            <a href="https://github.com/TBuscemi/TBuscemi.github.io" target='_blank'><i class="fa-brands fa-github fab project-social"></i></a>
             <a href='https://tbuscemi.github.io/' target='_blank'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-window-fullscreen fab" viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-window-fullscreen fab project-social" viewBox="0 0 16 16">
                 <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"/>
                 <path d="M.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H.5ZM1 5V2h14v3H1Zm0 1h14v8H1V6Z"/>
               </svg>
