@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAAA,AAAA,MAAM,CAAC;EACH,OAAO,EAAE,KAAK;EACd,cAAc,EAAE,GAAG;CACpB;;AAED,AAAA,YAAY,CAAC;EACX,KAAK,EAAE,IAAI;CACZ",
     "sources": [
-        "Test.scss"
+        "ParticlesBubblesFullPage.scss"
     ],
     "names": [],
     "file": "Test.css"
