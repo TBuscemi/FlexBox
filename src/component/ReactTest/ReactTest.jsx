@@ -25,7 +25,7 @@ const ReactTest = () => {
 
   return (
     <div className='test-wrapper'>
-      <div className='test-2'>
+      {/* <div className='test-2'>
       
       
       <input type="color" onChange={e=>setButtColors(e.target.value)}/>  
@@ -73,7 +73,43 @@ const ReactTest = () => {
       <input id="2" />
     </div>
       
+      </div> */}
+
+
+      <div className='form-grid'>
+        <div className='form-grid-line'>\
+        <div>
+          <p>Total amount   12.50</p>
+        </div>
+        <div>
+          <label htmlFor="">checkbox stuff</label>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+        </div>
+          <div>
+          <label htmlFor="">input stuff stuff</label>
+          <input type="text" id="fname" name="fname"/>
+          </div>
+        </div>
       </div>
+      
+      
+      <div className='form-flex'>
+        <div className='form-flex-line'>\
+          <div>  
+            <p>Total amount   12.50</p>
+          </div>
+          <div>
+            <label htmlFor="">checkbox stuff</label>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+          </div>
+          <div>
+            <label htmlFor="">input stuff stuff</label>
+            <input type="text" id="fname" name="fname"/>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   )
 }
