@@ -12,6 +12,8 @@
     margin-top: 5rem;
     display: flex;
     width: 50%;
+    background-color: cornflowerblue;
+    margin: 5rem;
 }
 
 
@@ -25,7 +27,7 @@
 
 .form-grid{
     width: 60%;
-    height: 60rem;
+    height: 20rem;
     background-color: rebeccapurple;
 }
 
@@ -39,10 +41,10 @@
     
 }
 
-
 .form-flex{
+    margin: 5rem;
     width: 60%;
-    height: 60rem;
+    height: 20rem;
     background-color: rebeccapurple;
 }
 
@@ -53,7 +55,78 @@
     justify-content: space-evenly;
 }
 
+.card-test-cont{
+    display: flex;
+    justify-content: center;
+    background-color: rebeccapurple;
+    width: 80%;
+
+
+}
+
+.card-test{
+    overflow: hidden;
+    background-color:black;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: .5rem;
+    margin-bottom: 5rem;
+    border-radius: 4%;
+    height: 25rem;
+    width: 20rem;
+}
+
+.avatar{
+    fill: pink;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+}
 
 
 
 
+@function random_range($min, $max) {
+    $rand: random();
+    $random_range: $min + floor($rand * (($max - $min) + 1));
+    @return $random_range;
+}
+  
+.snow{
+    $total: 201;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+    
+  
+    @for $i from 1 through $total {
+      $random-x: random(200000) * 0.0001rem;
+      $random-offset: random_range(-100000, 100000) * 0.0001rem;
+      $random-x-end: $random-x + $random-offset;
+      $random-x-end-snow: $random-x + ($random-offset / 2);
+      $random-snow-time: random_range(30000, 80000) / 100000;
+      $random-snow-y: $random-snow-time * 20rem;
+      $random-scale: random(10000) * 0.0001;
+      $fall-duration: random_range(10, 30) * 1s;
+      $fall-delay: random(30) * -1s;
+  
+      &:nth-child(#{$i}) {
+        opacity: random(10000) * 0.0001;
+        transform: translate($random-x, -10px) scale($random-scale);
+        animation: fall-#{$i} $fall-duration $fall-delay linear infinite;
+      }
+  
+      @keyframes fall-#{$i} {
+        #{percentage($random-snow-time)} {
+          transform: translate($random-x-end, $random-snow-y) scale($random-scale);
+        }
+        to {
+          transform: translate($random-x-end-snow, 25rem) scale($random-scale);
+        }
+      }
+    }
+  }
